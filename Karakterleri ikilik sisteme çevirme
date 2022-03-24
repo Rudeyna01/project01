@@ -1,0 +1,24 @@
+def  ikilikGösterimeÇevir(karaktergösterim):
+    i=0
+    print (kelime,"ikilik gösterimi: ",end="")
+    while True:
+        ikilikGösterim= ord(kelime[i])
+        print (bin(ikilikGösterim).replace("b",""),end=" ")
+        i=i+1
+        if i==len(kelime):
+            break
+    return ikilikGösterim
+
+
+print ("İkili Kod Çeviriciye Hoşgeldiniz! \nBu programda karakterleri sahip oldukları ikilik gösterimlerine çevirebilirsiniz")
+while True:
+    print ("\n0 -> Programı durdur \n1 -> kelimeyi ikiliğe çevir")
+    seçim = int (input ("Yapmak istediğiniz işlemi seçiniz:"))
+
+    if (seçim == 1):
+        kelime = (input ("Çevrilmesini istediğiniz kelimeyi giriniz: "))
+        ikilikGösterimeÇevir(kelime)
+   
+    elif (seçim== 0):
+        print("Program durduruldu...")
+        break
